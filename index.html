@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tip">
+        (Click anywhere to hear sound...)
+    </div>
+
+    <div class="main">
+        <div class="user-input">
+            <div class="count">
+                Count: 0
+            </div>
+
+            <div id="metronome" class="instrument">
+                <input type="checkbox" checked>
+                <label>Metronome</label>
+            </div>
+
+            <div id="kick-drum" class="instrument">
+                <input type="checkbox">
+                <label>Kick Drum</label>
+                <input type="text">
+            </div>
+
+            <div id="snare-drum" class="instrument">
+                <input type="checkbox">
+                <label>Snare Drum</label>
+                <input type="text">
+            </div>
+
+            <div id="hi-hat" class="instrument">
+                <input type="checkbox">
+                <label>Hi Hat</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="metronome">
+            <div class="background-left"></div>
+            <div class="background-center">
+                <div class="core"></div>
+            </div>
+            <div class="background-right"></div>
+            <div class="arm"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
